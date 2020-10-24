@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('main');
+Route::get('/', 'MainController@index')->name('main');
 
 Route::get('products','ProductController@index')->name('products.index');
 
