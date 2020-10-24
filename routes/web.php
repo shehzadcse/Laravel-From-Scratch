@@ -13,4 +13,21 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('main');
+
+
+Route::get('products', function () {
+    return 'This is the list of products';
+})->name('products.index');
+
+Route::get('products/create', function () {
+    return 'A form to create the product';
+})->name('products.create');
+
+Route::post('products', function () {
+    // POST LOGIC COMES HERE
+})->name('products.store');
+
+Route::get('products', function () {
+    return 'This is the list of products';
+})->name('products.index');
