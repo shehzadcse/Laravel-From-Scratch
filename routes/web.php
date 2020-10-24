@@ -28,8 +28,18 @@ Route::post('products', function () {
     // POST LOGIC COMES HERE
 })->name('products.store');
 
-Route::get('products', function () {
-    return 'This is the list of products';
-})->name('products.index');
+Route::get('products/{product}', function ($product) {
+    return 'Showing products '.$product;
+})->name('products.show');
 
-// Testing full procedure with git
+Route::get('products/{product}/edit', function ($product) {
+    return 'A form to edit product '.$product;
+})->name('products.edit'); 
+
+Route::match(['put','patch'], 'products/{product}', function ($product) {
+  
+})->name('products.update');
+
+Route::delete('products/{product}', function ($product) {
+    
+})->name('products.delete');
