@@ -27,7 +27,3 @@ Route::get('products/create', function () {
 Route::post('products', function () {
     // POST LOGIC COMES HERE
 })->name('products.store');
-
-Route::get('products', function () {
-    return 'This is the list of products';
-})->name('products.index');
