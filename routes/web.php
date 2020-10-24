@@ -31,3 +31,5 @@ Route::post('products', function () {
 Route::get('products', function () {
     return 'This is the list of products';
 })->name('products.index');
+
+// Testing full procedure with git
