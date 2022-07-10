@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'MainController@index')->name('main');
+Route::get('/', 'ProductController@index')->name('products.index');
 
 Route::get('products','ProductController@index')->name('products.index');
 

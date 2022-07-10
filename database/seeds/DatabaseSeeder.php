@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);        
         $faker = Faker\Factory::create();
-        for($i = 0; $i < 20; $i++) {
+        for($i = 0; $i < 50; $i++) {
             App\Product::create([
                 'title' => $faker->sentence(3),
                 'description' => $faker->paragraph(1),
